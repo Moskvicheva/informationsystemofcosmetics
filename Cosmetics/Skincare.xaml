@@ -1,0 +1,27 @@
+﻿<Page x:Class="Cosmetics.Skincare"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cosmetics"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="525"
+      Title="Skincare">
+
+    <Grid>
+        <Image x:Name="Image1_png" Source="Image1.png" Stretch="Fill"/>
+        <ComboBox x:Name="SkinComboBox" HorizontalAlignment="Left" Height="19" Margin="71,178,0,0" VerticalAlignment="Top" Width="153">
+            <Label>Eyes and lips</Label>
+            <Label>Cleansing</Label>
+            <Label>Moisturising</Label>
+            <Label>Makeup remove</Label>
+        </ComboBox>
+        <Button x:Name="SkinDoneButton" Content="Done" HorizontalAlignment="Left" Height="38" Margin="345,219,0,0" VerticalAlignment="Top" Width="105" BorderBrush="#FF03F7E5" Background="#FFFBDDDD" FontFamily="Levenim MT" BorderThickness="2" FontSize="14" Click="SkinDoneButton_Click"/>
+        <Label x:Name="SkinLabel" Content="Skincare" HorizontalAlignment="Left" Height="32" Margin="397,33,0,0" VerticalAlignment="Top" Width="82" BorderThickness="2" Background="#FFFBDDDD" BorderBrush="#FF03F7E5" FontFamily="Levenim MT" FontSize="16"/>
+        <Label x:Name="SkinCategoryLabel" Content="Choose category:" HorizontalAlignment="Left" Height="33" Margin="71,101,0,0" VerticalAlignment="Top" Width="153" FontFamily="Levenim MT" BorderThickness="2" Background="#FFFBDDDD" BorderBrush="#FF03F7E5" FontSize="14"/>
+        <Button x:Name="SkinArrowButton" HorizontalAlignment="Left" Height="30" Margin="10,280,0,0" VerticalAlignment="Top" Width="45" Click="SkinArrowButton_Click">
+            <Image x:Name="arrow_png" Height="26" Source="arrow.png" Stretch="Fill" Width="31"/>
+        </Button>
+
+    </Grid>
+</Page>

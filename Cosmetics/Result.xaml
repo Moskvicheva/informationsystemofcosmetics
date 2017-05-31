@@ -14,10 +14,9 @@
         <Button x:Name="ResultArrowButton" HorizontalAlignment="Left" Height="33" Margin="10,296,0,0" VerticalAlignment="Top" Width="48" Click="ResultArrowButton_Click">
             <Image x:Name="arrow_png" Height="27" Source="arrow.png" Stretch="Fill" Width="41"/>
         </Button>
-        <Button x:Name="ResultSearchButton" Content="Search" HorizontalAlignment="Left" Height="29" Margin="389,94,0,0" VerticalAlignment="Top" Width="90" Background="#FFFBDDDD" BorderBrush="#FF03F7E5" BorderThickness="2"/>
-        <Button x:Name="button" Content="Delete" HorizontalAlignment="Left" Height="33" Margin="358,296,0,0" VerticalAlignment="Top" Width="106" BorderBrush="#FF03F7E5" BorderThickness="2"/>
-        <Button x:Name="button1" Content="Edit" HorizontalAlignment="Left" Height="33" Margin="216,296,0,0" VerticalAlignment="Top" Width="106" BorderBrush="#FF03F7E5" BorderThickness="2"/>
-        <TextBox x:Name="SearchTextBox" HorizontalAlignment="Left" Height="29" Margin="69,94,0,0" TextWrapping="Wrap" Text="Write a word or a price..." VerticalAlignment="Top" Width="277" FontFamily="Levenim MT" Foreground="#FFCBBCBC"/>
+        <Button x:Name="ResultSearchButton" Content="Search" HorizontalAlignment="Left" Height="29" Margin="389,94,0,0" VerticalAlignment="Top" Width="90" Background="#FFFBDDDD" BorderBrush="#FF03F7E5" BorderThickness="2" Click="ResultSearchButton_Click"/>
+        <Button x:Name="button" Content="Delete/edit" HorizontalAlignment="Left" Height="33" Margin="358,296,0,0" VerticalAlignment="Top" Width="106" BorderBrush="#FF03F7E5" BorderThickness="2" Click="button_Click"/>
+        <TextBox x:Name="SearchTextBox" HorizontalAlignment="Left" Height="29" Margin="69,94,0,0" TextWrapping="Wrap" Text="Write a name of a product..." VerticalAlignment="Top" Width="277" FontFamily="Levenim MT" Foreground="#FFCBBCBC"/>
         <TextBox x:Name="ResultTextBox" HorizontalAlignment="Left" Height="92" Margin="69,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="410"/>
 
     </Grid>

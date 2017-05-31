@@ -27,7 +27,26 @@ namespace Cosmetics
 
         private void SkinDoneButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Result(SkinComboBox.Text));
+            if (SkinComboBox.Text == "Eyes and lips")
+            {
+                NavigationService.Navigate(new Result(SkinComboBox.Text));
+            }
+            else if (SkinComboBox.Text == "Cleansing")
+            {
+                NavigationService.Navigate(new Result(SkinComboBox.Text));
+            }
+            else if (SkinComboBox.Text == "Moisturising")
+            {
+                NavigationService.Navigate(new Result(SkinComboBox.Text));
+            }
+            else if (SkinComboBox.Text == "Makeup remove")
+            {
+                NavigationService.Navigate(new Result(SkinComboBox.Text));
+            }
+            else
+            {
+                MessageBox.Show("Choose any category");
+            }
         }
 
         private void SkinArrowButton_Click(object sender, RoutedEventArgs e)

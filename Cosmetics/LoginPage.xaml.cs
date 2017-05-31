@@ -40,15 +40,19 @@ namespace Cosmetics
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
             bool success = false;
-            StreamReader sr = new StreamReader("Loginpassword.txt");
-            while (!sr.EndOfStream)
+            //StreamReader sr = new StreamReader("Loginpassword.txt");
+            User[] list = Serialization.deserialize();
+            int i = 0;
+            while(i < list.Length)
             {
-                if(sr.ReadLine() == (LoginTextBox.Text + " " + PasswordBox.Password).ToString())
+                if(list[0].write() == (LoginTextBox.Text + " " + PasswordBox.Password).ToString())
                 {
                     NavigationService.Navigate(new SearchingPage());
                     success = true;
                 }
+                ++i;
             }
+            Serialization.serialize(list);
             if (!success)
             {
                 MessageBox.Show("Incorrect login and/or password");

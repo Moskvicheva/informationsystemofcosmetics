@@ -37,7 +37,22 @@ namespace Cosmetics
 
         private void DoneColorButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Result(ColorComboBox.Text));
+            if (ColorComboBox.Text == "Face")
+            {
+                NavigationService.Navigate(new Result(ColorComboBox.Text));
+            }
+            else if (ColorComboBox.Text == "Eyes")
+            {
+                NavigationService.Navigate(new Result(ColorComboBox.Text));
+            }
+            else if (ColorComboBox.Text == "Lips")
+            {
+                NavigationService.Navigate(new Result(ColorComboBox.Text));
+            }
+            else
+            {
+                MessageBox.Show("Shoose any category");
+            }
         }
     }
 }

@@ -9,15 +9,20 @@ namespace Cosmetics
     class Products
     {
 
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public int Price { get; set; }
+        public string Name;
+        public string Description;
+        public int Price;
 
-        public void Product(string name, string description, int price)
+        public Products (string name, string description, int price)
         {
             Name = name;
             Description = description;
             Price = price;
+        }
+
+        public string productsshow()
+        {
+            return Name + "\n" + Description + "\n" + Price;
         }
 
 

@@ -70,10 +70,5 @@ namespace Cosmetics
         {
             NavigationService.Navigate(new Result(DeleteButton.Content.ToString()));
         }
-
-        private void EditButton_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Result(EditButton.Content.ToString()));
-        }
     }
 }

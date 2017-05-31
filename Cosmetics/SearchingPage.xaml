@@ -18,7 +18,6 @@
         </ComboBox>
         <Button x:Name="SearchButton" Content="Search" HorizontalAlignment="Left" Height="38" Margin="345,219,0,0" VerticalAlignment="Top" Width="105" Background="#FFFBDDDD" BorderBrush="#FF03F7E5" FontFamily="Levenim MT" BorderThickness="2" Click="SearchButton_Click"/>
         <Button x:Name="button" Content="Add new product" HorizontalAlignment="Left" Height="22" Margin="177,318,0,0" VerticalAlignment="Top" Width="194" Background="#FFFBDDDD" Click="button_Click"/>
-        <Button x:Name="DeleteButton" Content="Delete product" HorizontalAlignment="Left" Height="22" Margin="177,350,0,-22" VerticalAlignment="Top" Width="194" Click="DeleteButton_Click"/>
-        <Button x:Name="EditButton" Content="Edit product" HorizontalAlignment="Left" Height="22" Margin="177,377,0,-49" VerticalAlignment="Top" Width="194" Click="EditButton_Click"/>
+        <Button x:Name="DeleteButton" Content="Edit/Delete product" HorizontalAlignment="Left" Height="22" Margin="177,350,0,-22" VerticalAlignment="Top" Width="194" Click="DeleteButton_Click"/>
     </Grid>
 </Page>

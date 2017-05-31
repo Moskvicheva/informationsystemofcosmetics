@@ -5,26 +5,32 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Cosmetics
 {
     class Serialization
     {
-        public void serialize(User user)
+
+        public static void serialize(User[] list)
         {
-            XmlSerializer xmls = new XmlSerializer(typeof(User));
-            using (FileStream fl = new FileStream("database.xml", FileMode.OpenOrCreate))
+            
+            BinaryFormatter formatter = new BinaryFormatter();
+            using (FileStream fs = new FileStream("users.dat", FileMode.OpenOrCreate))
             {
-                xmls.Serialize(fl, user);
+                formatter.Serialize(fs, list);
             }
         }
-        public void deserialize(List<User> list)
+        public static User[] deserialize()
         {
-            XmlSerializer xmls = new XmlSerializer(typeof(User));
-            using (FileStream fl = new FileStream("database.xml", FileMode.OpenOrCreate))
+            User[] list;
+            BinaryFormatter formatter = new BinaryFormatter();
+            using (FileStream fs = new FileStream("users.dat", FileMode.OpenOrCreate))
             {
-                list = (List<User>)xmls.Deserialize(fl);
+                list = (User[])formatter.Deserialize(fs);
             }
+            return list;
+            
         }
     }
 }
